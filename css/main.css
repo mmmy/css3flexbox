@@ -2,6 +2,13 @@
 *{
 	box-sizing:border-box;
 }
+body{
+	display: flex;
+	align-items:center;
+	justify-items:center;
+	vertical-align: center;
+	flex-wrap:wrap;
+}
 [class^="box"]{
 	margin: 16px;
 	padding: 4px;
@@ -9,7 +16,7 @@
 	background: #e7e7e7;
 	width: 104px;
 	height: 104px;
-
+	display: flex;
 	object-fit: contain;
 	box-shadow: inset 0 5px white,
 				inset 0 -5px #bbb,
@@ -23,10 +30,31 @@
 	height: 24px;
 	border-radius: 50%;
 	margin: 4px;
-
 	background: #333;
 	box-shadow: inset 0 3px #111,inset 0 -3px #555;
 }
-#dice{
+.dice{
+	display: flex;
 	background: #252525;
+}
+[class$="second"]{
+	justify-content:center;
+}
+[class$="third"]{
+	justify-content:flex-end;
+}
+[class$="fourth"]{
+	align-items:center;
+}
+[class$="fifth"]{
+	justify-content:center;
+	align-items:center;
+}
+[class$="sixth"]{
+	justify-content:center;
+	align-items:flex-end;
+}
+[class$="seventh"]{
+	justify-content:flex-end;
+	align-items:flex-end;
 }
